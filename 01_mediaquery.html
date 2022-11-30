@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mediaquery</title>
     <!-- 일반 PC : width: 1000px 이상 -->
-    <style type="text/css" media="screen and (min-width:1000px)">
+    <style type="text/css">
+    @media screen and (min-width:1000px){
         body{color:#fff;font-size:50px;background:#ff99cc;}
-    </style>
-    <!-- 태블릿 PC : width: 1000px alaks 640px 이상 -->
-    <style type="text/css" media="screen and (min-width:640px) and (max-width:999px)">
+    }
+    /* <!-- 태블릿 PC : width: 1000px alaks 640px 이상 --> */
+    @media screen and (min-width:640px) and (max-width:999px){
         body{color:#fff;font-size:30px;background:#99cc33;}
-    </style>
-    <!-- 모바일 : width:640px 미만 -->
-    <style type="text/css" media="screen and (max-width:639px)">
-        body{color:#fff;font-size:14px;background:#0099ff;}
+    }
+    /* <!-- 모바일 : width:640px 미만 --> */
+    @media screen and (max-width:639px){
+    body{color:#fff;font-size:14px;background:#0099ff;}
+    }
     </style>
     
 </head>
